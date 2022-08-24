@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+        .button{
+            position: absolute;
+            left: 90px;
+            text-align: center;
+            height:25px;
+            width:125px;
+        }
+    </style>
 </head>
 <body>
-<div style="background-color: whitesmoke;height: auto;width: 1060px">
+<div style="background-color: whitesmoke;height: 475px;width: 1060px">
 <form method="get" action="#">
-  <div style="background-color: lime;height: 120px;width: 960px;border: 15px;padding: 50px;margin: 0px">
+  <div style="background-color: lime;height: 120px;width: 960px;border: 15px;padding: 50px;margin: 0">
     <h1 style="color: saddlebrown;text-align: center">Contact Form</h1>
   </div>
     <div>
@@ -21,8 +30,11 @@
     </div><br>
     <div>
         <label style="font-size: 28px">Phone<span style="color: red">*</span></label>
-        <input type="tel" name="tel" required>
+        <input type="tel" name="tel" required><br>
+        <br>
+        <button class="button" type="submit" >SUBMIT</button>
     </div>
+
 
 </form>
     </div>
