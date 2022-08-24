@@ -1,0 +1,6 @@
+input[type=email]{
+    background-color: azure;
+}
+input[type=password][name=pwd]{
+    background-color: aquamarine;
+}
