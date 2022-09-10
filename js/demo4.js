@@ -1,4 +1,6 @@
-function update() {
+function update(city) {
+    var bg = document.getElementById('bg-fade');
+    bg.style.display="block";
     var xhttp = new XMLHttpRequest();
     xhttp.onload = function () {
         // console.log(this.responseText);
@@ -10,8 +12,11 @@ function update() {
         x1.innerText = t;
         var ct = data.name +", "+data.sys.country;
         document.getElementById("city").innerText = ct;
+        bg.style.display="none";
+
+
     };
-    var link = "https://api.openweathermap.org/data/2.5/weather?q=hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric";
+    var link = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=09a71427c59d38d6a34f89b47d75975c&units=metric";
     xhttp.open("get",link,true);
     xhttp.send();
 }

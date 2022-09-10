@@ -1,0 +1,15 @@
+.bg-fade{
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url("jetbrains://web-storm/navigate/reference?project=untitled&path=Anh/a2dc9668f2cf170fe3efeb263128b0e7.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aqua;
+    opacity: 50%;
+    display: none;
+
+}
