@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="nivosilder/nivo-slider/themes/default/default.css">
+    <link rel="stylesheet" href="nivosilder/nivo-slider/nivo-slider.css">
+</head>
+<body>
+<section class="section banner" >
+    <div class="container theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="images/toystory.jpg" data-thumb="nivosilder/nivo-slider/demo/images/dev7logo.png" alt="" />
+            <img src="images/up.jpg" data-thumb="nivosilder/nivo-slider/demo/images/walle.jpg" alt="" title="This is an example of a caption" />
+            <img src="images/walle.jpg" data-thumb="nivosilder/nivo-slider/demo/images/up.jpg" alt="" data-transition="slideInLeft" />
+            <img src="images/nemo.jpg" data-thumb="nivosilder/nivo-slider/demo/images/toystory.jpg" alt="" title="#htmlcaption" />
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="liber/jquery%203.6.1/jquery.js"></script>
+<script type="text/javascript" src="nivosilder/nivo-slider/jquery.nivo.slider.js" ></script>
+<script type="text/javascript">
+    $(`#slider`).nivoSlider();
+</script>
+</body>
+</html>
