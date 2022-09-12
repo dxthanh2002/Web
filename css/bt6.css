@@ -1,0 +1,17 @@
+
+.box-weather{
+    float: left;
+    width: calc(25% - 30px);
+    background-color: #34495e98;
+    margin: 15px ;
+    padding: 15px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+.box-weather img{
+    transform: translate(150px,-80px);//( magin left,top)
+}
+.forecast-weather{
+    background-image: url("../Anh/img_1.png") ;
+
+}
