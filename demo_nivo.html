@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="nivosilder/nivo-slider/themes/default/default.css">
-    <link rel="stylesheet" href="nivosilder/nivo-slider/nivo-slider.css">
+    <link rel="stylesheet" href="liber/nivosilder/nivo-slider/themes/default/default.css">
+    <link rel="stylesheet" href="liber/nivosilder/nivo-slider/nivo-slider.css">
 </head>
 <body>
 <section class="section banner" >
@@ -19,9 +19,26 @@
     </div>
 </section>
 <script type="text/javascript" src="liber/jquery%203.6.1/jquery.js"></script>
-<script type="text/javascript" src="nivosilder/nivo-slider/jquery.nivo.slider.js" ></script>
+<script type="text/javascript" src="liber/nivosilder/nivo-slider/jquery.nivo.slider.js" ></script>
 <script type="text/javascript">
     $(`#slider`).nivoSlider();
 </script>
+<script type="text/javascript">
+    let map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+        });
+    }
+
+    window.initMap = initMap;
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer
+></script>
+
 </body>
 </html>
